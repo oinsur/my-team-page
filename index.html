@@ -1,95 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omar's second project on devchallenge.io">
+  <meta name="keywords" content="html, css, flex, bem, responsive">
+  <meta name="author" content="Omar Insurriaga">
+  <title>My team page</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <!--Header section with title and description-->
+    <header class="header">
+      <h1 class="header__title">The creative crew</h1>
+      <ul class="header__description">
+        <li class="header__description-heading">
+          WHO WE ARE
         </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
+        <li class="header__description-text">We are team of creatively diverse.  driven.  
+          innovative individuals working in various locations from the world.</li>
       </ul>
-    </div>
-  </body>
+    </header>
+    <!--main container for the team cards-->
+    <main class="cards">
+      <!--cards for each team member. Consists of image, name, & title-->
+      <!--first team member card-->
+      <div class="cards__card">
+        <section class="card__content-inner">
+          <img src="./photo1.png" alt="1st pic" class="cards__card-img">
+          <h2 class="cards__card-name">Bill Mahoney</h2>
+        </section>
+        <h2 class="cards__card-title">PRODUCT OWNER</h2>
+      </div>
+      <!--second team member card-->
+      <div class="cards__card">
+        <section class="card__content-inner">
+          <img src="./photo2.png" alt="2nd pic" class="cards__card-img">
+          <h2 class="cards__card-name">Saba Cabrera</h2>
+        </section>
+        <h2 class="cards__card-title">ART DIRECTOR</h2>
+      </div>
+      <!--third team member card-->
+      <div class="cards__card">
+        <section class="card__content-inner">
+          <img src="./photo3.png" alt="3rd pic" class="cards__card-img">
+          <h2 class="cards__card-name">Shae Le</h2>
+        </section>
+        <h2 class="cards__card-title">TECH LEAD</h2>
+      </div>
+      <!--fourth team member card-->
+      <div class="cards__card">
+        <section class="card__content-inner">
+          <img src="./photo4.png" alt="4th pic" class="cards__card-img">
+          <h2 class="cards__card-name">Skylah Lu</h2>
+        </section>
+        <h2 class="cards__card-title">UX DESIGNER</h2>
+      </div>
+      <!--fifth team member card-->
+      <div class="cards__card">
+        <section class="card__content-inner">
+          <img src="./photo5.png" alt="5th pic" class="cards__card-img">
+          <h2 class="cards__card-name">Griff Richards</h2>
+        </section>
+        <h2 class="cards__card-title">DEVELOPER</h2>
+      </div>
+      <!--sixth team member card-->
+      <div class="cards__card">
+        <section class="card__content-inner">
+          <img src="./photo6.png" alt="6th pic" class="cards__card-img">
+          <h2 class="cards__card-name">Stan John</h2>
+        </section>
+        <h2 class="cards__card-title">DEVELOPER</h2>
+      </div>
+    </main>
+    <footer class="footer">
+      created by <span>oinsur</span> - devChallenges.io
+    </footer>
+  </div>
+</body>
 </html>

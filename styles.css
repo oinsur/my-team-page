@@ -1,0 +1,126 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/*Remove default margins,padding & set box-sizing*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  max-height: 1489px;
+}
+
+.page {
+  max-width: 1440px;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 0px 255px;
+  border: 1px solid;
+}
+/*header styles*/
+.header {
+  width: 100%;
+  height: 50%;
+  padding-top: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  width: 50%;
+  font-family: 'PT Serif', serif;
+  letter-spacing:-2px;
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+.header__description {
+  width: 46%;
+  list-style: none;
+}
+
+.header__description-heading {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -1px;
+  line-height: 1.7em;
+  font-size: 1.13em;
+  font-weight: 600;
+}
+
+.header__description-text {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.45em;
+  font-size: 1.13em;
+  font-weight: 400;
+}
+/*main container styles*/
+.cards {
+  width: 100%;
+  margin-top: 96px;
+}
+/*styles for the whole card*/
+.cards__card {
+  width: 264px;
+  height: 386px;
+  border: 1px solid;
+  display: flex;
+  position: relative;
+}
+/*styles for inner card items. Pic and name*/
+.card__content-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__card-img {
+  width: 90%;
+}
+
+.cards__card-name {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+  letter-spacing: -1px;
+  font-size: 1.13em;
+  font-weight: 600;
+}
+/*styles for card title*/
+.cards__card-title {
+  transform: rotate(90deg);
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: .75em;
+  width: 100%;
+  left: 117px;
+  top: 124px;
+}
+
+
+
+
+
+
+.footer {
+  margin: 308px 0 24px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #BDBDBD;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+
+this will rotate the text
+transform: rotate(90deg);*/
